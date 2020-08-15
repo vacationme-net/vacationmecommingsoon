@@ -1,0 +1,521 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+body {
+  font-family: "Poppins Regular", sans-serif;
+  background: #e7e7e7;
+  padding-top: 65px;
+}
+
+.navbar-container {
+  background: #fff;
+  box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 50;
+}
+.ui.menu {
+  font-family: "Poppins Regular", sans-serif;
+}
+
+.container-fluid {
+  padding: 0 15px;
+}
+
+.container-fluid {
+  padding: 0 15px;
+}
+
+.nav-menu.ui.menu .right .item {
+  color: #5f5f5f;
+}
+
+.item.logo {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.ui.menu .item > .input.searchbar input {
+  background: #e9e9e9;
+  border-radius: 5em;
+  border: none;
+}
+
+.right-panel {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  padding-left: 15px;
+}
+
+.right-panel .ui.form {
+  max-width: 645px;
+  width: 100%;
+}
+
+.right-panel .ui.tabular.menu {
+  justify-content: space-between;
+  border-bottom: none;
+  margin-bottom: 5px;
+  -webkit-box-pack: justify;
+  min-height: auto;
+  padding-top: 20px;
+}
+
+.right-panel .ui.tabular.menu .item {
+  border: none;
+  font-family: "Poppins Medium", sans-serif;
+  color: #e62525;
+  font-size: 12px;
+  min-height: auto !important;
+  font-weight: normal !important;
+  height: 15px;
+  padding: 0;
+}
+
+.right-panel .ui.tabular.menu:after {
+  display: none;
+}
+
+.right-panel .ui.tabular.menu .active.item {
+  border: none;
+  border-bottom: 3px solid #e62525;
+  background: none;
+}
+
+.right-panel .ui.segment {
+  background: transparent;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 !important;
+}
+
+.right-panel .ui.form .fields {
+  margin-bottom: 0px;
+  padding: 0;
+}
+.right-panel .ui.form .inline.fields {
+  margin: 0 0 17px;
+}
+
+.right-panel .ui.checkbox label {
+  font-size: 10px;
+  font-family: "Poppins Regular", sans-serif;
+  color: #414141 !important;
+  cursor: pointer;
+}
+
+.ui.radio.checkbox input:checked ~ label:before,
+.ui.radio.checkbox input ~ label:before,
+.ui.radio.checkbox input:focus ~ label:before,
+.ui.radio.checkbox input:focus:checked ~ label:before {
+  border-color: #e62525 !important;
+  background-color: transparent;
+}
+
+.ui.radio.checkbox input:checked ~ label:before,
+.ui.radio.checkbox input:focus:checked ~ label:before {
+  background-color: #e62525;
+}
+
+.ui.radio.checkbox input:checked ~ label:after,
+.ui.radio.checkbox input:focus:checked ~ label:after {
+  background-color: #e62525;
+}
+
+.right-panel .ui.form .fields:not(.inline) > .field {
+  padding: 0;
+}
+
+.right-panel .ui.form .fields > .field > input,
+.right-panel .ui.form .fields > .field > .input {
+  border: 1px solid transparent;
+  color: #6b6b6b;
+  text-align: right;
+  border-radius: 0;
+  height: 44px;
+  font-size: 13px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background: #fff;
+  font-family: "Poppins Regular", sans-serif;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.ui.red.button {
+  background: #e62525;
+  font-weight: normal;
+  font-family: "Poppins Regular", sans-serif;
+}
+
+.right-panel .ui.labeled.input > .label {
+  color: rgba(107, 107, 107, 0.5);
+  background: #fff;
+  border-radius: 0px !important;
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 13px;
+  font-weight: 100 !important;
+  line-height: 44px;
+  padding: 0;
+  text-align: left;
+}
+
+.right-panel .ui.labeled.input > .input {
+  border-radius: 0;
+  border: none !important;
+  outline: none;
+  font-family: "Poppins Regular", sans-serif;
+}
+
+.right-panel .ui.form .fields > .field button.red {
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  height: 44px;
+  width: 100%;
+}
+
+.right-panel .ui.form .fields .input.input-wrap {
+  display: flex;
+  align-content: center;
+}
+
+.right-panel .ui.form .fields .ui.dropdown {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background: transparent;
+  text-align: right;
+  margin-left: 15px;
+}
+
+.ui.selection.dropdown {
+  min-width: auto;
+  margin-top: 4px;
+  flex: 1 1 auto;
+  text-align: right;
+}
+.ui.selection.dropdown input {
+  text-align: right;
+}
+
+.right-panel .ui.form .full.fields {
+  display: block;
+
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#date-range {
+  background: #fff url(../images/calender.svg) 12px center no-repeat;
+}
+
+#departing_from {
+  background: #fff url(../images/departure.svg) 12px center no-repeat;
+}
+
+#going_to {
+  background: #fff url(../images/arrival.svg) 12px center no-repeat;
+}
+
+#passengers {
+  background: #fff url(../images/user.svg) 12px center no-repeat;
+}
+
+.content-container {
+  position: relative;
+  z-index: 1;
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.userprofile {
+  flex: 1 1 300px;
+}
+
+.userprofile .top-panel {
+  margin-left: -15px;
+  padding-left: 30px;
+  padding-right: 15px;
+  background: #fff;
+  box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 8px 8px;
+}
+
+.userprofile .coverphoto {
+  max-width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.userprofile .userinfo-wrapper {
+  margin-top: -40px;
+}
+
+.userinfo {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.userinfo .bio {
+  font-size: 11px;
+}
+
+.userinfo .bio .name {
+  font-size: 18px;
+  color: #4d4d4d;
+  font-family: "Poppins Regular", sans-serif;
+}
+
+.userinfo .ui.statistics {
+  margin: 0;
+}
+
+.userinfo .ui.statistics .statistic > .label {
+  font-family: "Poppins Semibold", sans-serif;
+  font-size: 10px !important;
+}
+
+.userinfo .ui.statistics .statistic > .value {
+  font-family: "Poppins Semibold", sans-serif;
+  font-size: 15px !important;
+}
+
+.userinfo-wrapper .profile-image {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #fff;
+  border-radius: 100%;
+  background: url(https://semantic-ui.com/images/avatar2/large/elyse.png)
+    center/150px no-repeat;
+}
+
+.userinfo-wrapper .profile-image img {
+  max-width: 100%;
+}
+.userinfo-wrapper {
+  display: inline-block;
+  position: relative;
+  padding-right: 60px;
+}
+
+.userinfo-wrapper:before {
+  content: "";
+  background: rgba(236, 236, 236, 0.72);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -150px;
+  bottom: 0;
+  border-radius: 140px;
+  z-index: 4;
+}
+
+.userinfo-wrapper .ui.items {
+  margin: 0;
+  z-index: 6;
+  position: relative;
+}
+
+.ui.tabular.menu .active.item,
+.ui.tabular.menu {
+  border: none;
+  border-radius: 0;
+}
+
+.top-panel .ui.tabular.menu .item {
+  font-family: "Poppins Semibold", sans-serif;
+  font-size: 15px;
+  color: #5f5f5f;
+}
+
+.top-panel .ui.tabular.menu .active.item {
+  color: #e62525;
+}
+
+.content-panel {
+  margin-top: 1rem !important;
+}
+.content-panel .ui.segment {
+  background: none;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.post-container {
+  margin-top: 20px;
+}
+
+.post-wrapper {
+  padding: 40px 50px;
+  background: #fff;
+  margin-right: -15px;
+  border-radius: 8px;
+}
+
+.post-container {
+  margin-top: 20px;
+}
+
+.post-wrapper .column > img {
+  width: 100%;
+  height: 200px;
+}
+
+.post-wrapper .grid > .column {
+  padding: 0 !important;
+  font-size: 0;
+  height: 200px;
+}
+
+.post-wrapper .grid > .column i.icon {
+  position: absolute;
+  color: #fff;
+  font-size: 51px;
+  left: 50%;
+  top: 50%;
+  margin-left: -30px;
+  margin-top: -15px;
+}
+
+.post-wrapper .grid > .column .viewmore {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  background: rgba(92, 92, 92, 0.8);
+  color: #fff;
+  line-height: 200px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.post-wrapper .ui.grid {
+  margin: 0;
+}
+
+.post-wrapper .ui.tiny.image {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.album-name {
+  display: inline-block;
+  font-size: 15px;
+  color: #5f5f5f;
+  margin-top: 20px;
+}
+
+.album-name span {
+  font-family: "Poppins Semibold", sans-serif;
+  font-size: 15px;
+  color: #5f5f5f;
+}
+
+.ui.comments .comment .avatar img {
+  border-radius: 100%;
+}
+
+.ui.comments {
+  margin: 0;
+  max-width: 100%;
+}
+
+.album-details {
+  font-size: 11px;
+  padding: 25px 0 10px;
+}
+
+.comments-count {
+  font-size: 13px;
+  padding: 10px 0;
+}
+
+.add-comment {
+  width: 100%;
+}
+
+.add-comment.ui.input > input {
+  background: #e7e7e7;
+  border-radius: 8px !important;
+
+  border: none;
+}
+
+.add-comment.ui.input > .ui.red.button {
+  margin-left: 10px;
+  border-radius: 8px !important;
+}
+
+.actions svg {
+  vertical-align: middle;
+}
+
+.actions .reply {
+  color: #e62525 !important;
+  padding-top: 5px;
+}
+
+.ui.comments .comment .comments {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.content-panel .post-date {
+  font-size: 11px;
+  color: #aeaeae;
+  padding-right: 15px;
+}
+
+.content-panel .post-date:before {
+  border-right: 3px dotted #b9b9b9;
+  position: absolute;
+  top: 32px;
+  bottom: -15px;
+  right: 0;
+  content: "";
+}
+
+.content-panel .post-date:after {
+  width: 13px;
+  height: 13px;
+  top: 15px;
+  right: -5px;
+  border-radius: 100%;
+  content: "";
+  background: #b9b9b9;
+  position: absolute;
+}
+
+i.chevron.circle.left.icon {
+  font-size: 30px;
+  color: #e62525;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.likes-n-share {
+  float: right;
+  margin-top: 20px;
+}
+
+.likes-n-share img {
+  max-width: 15px;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.likes-n-share .options {
+  height: 20px;
+  margin-right: 0px;
+  width: 5px;
+}

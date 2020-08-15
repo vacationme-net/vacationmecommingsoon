@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+body {
+  font-family: "Poppins Regular", sans-serif;
+}
+
+.ui.menu {
+  font-family: "Poppins Regular", sans-serif;
+}
+
+.container-fluid {
+  padding: 0 15px;
+}
+
+.nav-menu.ui.menu .right .item {
+  color: #e62525;
+}
+
+.item.logo {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.form-wrapper {
+  background: url(../images/flightsbg.jpg) bottom right/cover no-repeat;
+  padding: 50px 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-wrapper .banner-header {
+  align-self: flex-end;
+  justify-self: last baseline;
+  max-width: 552px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.form-wrapper .ui.form {
+  max-width: 645px;
+  width: 100%;
+}
+
+.form-wrapper .ui.tabular.menu {
+  justify-content: space-between;
+  border-bottom: none;
+  margin-bottom: 5px;
+  -webkit-box-pack: justify;
+  min-height: auto;
+}
+
+.form-wrapper .ui.tabular.menu .item {
+  border: none;
+  font-family: "Poppins Medium", sans-serif;
+  color: #fff;
+  min-width: 80px;
+  font-size: 16px;
+  min-height: auto !important;
+  font-weight: normal !important;
+  height: 30px;
+  padding: 0;
+}
+
+.form-wrapper .ui.tabular.menu:after {
+  display: none;
+}
+
+.form-wrapper .ui.tabular.menu .active.item {
+  border: none;
+  border-bottom: 3px solid #e62525;
+  background: none;
+}
+
+.form-wrapper .ui.segment {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 25px 17px 17px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 !important;
+}
+
+.form-wrapper .ui.form .fields {
+  margin-bottom: 0px;
+  padding: 0;
+}
+.form-wrapper .ui.form .inline.fields {
+  margin: 0 0 17px;
+}
+
+.form-wrapper .ui.form .fields:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.form-wrapper .ui.checkbox label {
+  font-size: 10px;
+  font-family: "Poppins Regular", sans-serif;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.ui.radio.checkbox input:checked ~ label:before,
+.ui.radio.checkbox input ~ label:before,
+.ui.radio.checkbox input:focus ~ label:before,
+.ui.radio.checkbox input:focus:checked ~ label:before {
+  background-color: transparent;
+  border-color: #e62525 !important;
+}
+.ui.radio.checkbox input:checked ~ label:after,
+.ui.radio.checkbox input:focus:checked ~ label:after {
+  background-color: #e62525;
+}
+
+.form-wrapper .ui.form .fields:not(.inline) > .field {
+  padding: 0;
+}
+
+.form-wrapper .ui.form .fields > .field > input,
+.form-wrapper .ui.form .fields > .field > .input {
+  border: 1px solid transparent;
+  color: #6b6b6b;
+  text-align: right;
+  border-radius: 0;
+  height: 44px;
+  font-size: 13px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background: #fff;
+  font-family: "Poppins Regular", sans-serif;
+}
+
+.form-wrapper .ui.form .fields > .field:nth-child(2) > * {
+  border-left: none;
+  border-right: none;
+}
+
+.form-wrapper .ui.form .fields > .field:first-child > * {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.form-wrapper .ui.form .fields > .field:last-child > * {
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+.ui.red.button {
+  background: #e62525;
+  font-weight: normal;
+  font-family: "Poppins Regular", sans-serif;
+}
+
+.form-wrapper .ui.labeled.input > .label {
+  color: rgba(107, 107, 107, 0.5);
+  background: #fff;
+  border-radius: 0px !important;
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 13px;
+  font-weight: 100 !important;
+  line-height: 44px;
+  padding: 0;
+  text-align: left;
+}
+
+.form-wrapper .ui.labeled.input > .input {
+  border-radius: 0;
+  border: none !important;
+  outline: none;
+  font-family: "Poppins Regular", sans-serif;
+}
+
+.form-wrapper .ui.form .fields > .field button.red {
+  border: none;
+  color: #fff;
+  border-radius: 0;
+  height: 44px;
+  width: 100%;
+}
+
+.form-wrapper .ui.form .fields .input.input-wrap {
+  display: flex;
+  align-content: center;
+}
+
+.form-wrapper .ui.form .fields .ui.dropdown {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background: transparent;
+  text-align: right;
+  margin-left: 15px;
+}
+
+.ui.selection.dropdown {
+  min-width: auto;
+  margin-top: 4px;
+  flex: 1 1 auto;
+  text-align: right;
+}
+.ui.selection.dropdown input {
+  text-align: right;
+}
+
+#date-range {
+  background: #fff url(../images/calender.svg) 12px center no-repeat;
+}
+
+#departing_from {
+  background: #fff url(../images/departure.svg) 12px center no-repeat;
+}
+
+#going_to {
+  background: #fff url(../images/arrival.svg) 12px center no-repeat;
+  border-left: 1px solid #707070;
+  border-right: 1px solid #707070;
+}
+
+#passengers {
+  background: #fff url(../images/user.svg) 12px center no-repeat;
+  border-right: 1px solid #707070;
+}
+
+#upload {
+  text-align: center;
+
+  padding: 15px 15px 40px;
+}
+
+#upload .header-text {
+  font-size: 30px;
+  line-height: 40px;
+  color: #636363;
+}
+
+.banner .ui.red.button {
+  height: 57px;
+  width: 291px;
+  border-radius: 12px;
+  font-size: 25px;
+  padding: 0;
+}
+
+#upload .ui.red.button {
+  height: 57px;
+  width: 358px;
+  border-radius: 12px;
+  font-size: 25px;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  line-height: 1.2;
+}
+
+.banner-text {
+  color: #fff;
+  font-size: 45px;
+  text-align: center;
+}
+
+.banner-text span {
+  font-size: 40px;
+}
+
+.baner-tiles-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.banner-tiles {
+  height: 223px;
+  width: 169px;
+  border-radius: 11px;
+  margin: 0 15px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.banner-tiles:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.imglabel {
+  font-family: "Poppins Medium", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: rgba(42, 15, 34, 0.7);
+  border-radius: 11px;
+  line-height: 34px;
+}
+
+#events {
+  background: url(../images/events-bg.jpg) left center no-repeat;
+  height: 270px;
+}
+
+#events .banner-text {
+  padding-top: 10px;
+}
+#events .ui.red.button {
+  margin-top: 40px;
+}
+
+#shopping {
+  background: url(../images/shopping-bg.jpg) left center no-repeat;
+  height: 275px;
+  align-items: center;
+}
+#shopping .imglabel {
+  background: rgba(4, 28, 68, 0.84);
+}
+#games {
+  background: url(../images/games-bg.jpg) left center no-repeat;
+  height: 250px;
+  align-items: center;
+}
+
+footer {
+  background: #f1f1f1;
+  padding: 50px 20px 10px;
+}
+
+.footer-links a {
+  color: #5f5f5f;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 28px;
+}
+
+.social-links {
+  justify-content: space-around;
+  display: flex !important;
+  flex-wrap: wrap;
+  align-self: flex-end;
+}
+
+.social-links a img {
+}
+
+.social-links .copyright {
+  color: #5f5f5f;
+  font-size: 14px;
+  text-align: center;
+  flex: 1 0 100%;
+  padding-top: 3em;
+}
+
+.newsletter {
+  float: right;
+}
+.newsletter label {
+  display: block;
+}
+
+.newsletter .ui.action input {
+  height: 33px;
+  border: 0;
+  background: #d6d6d6;
+  border-radius: 8px 0 0 8px;
+  width: 250px !important;
+  font-family: "Poppins Regular", sans-serif;
+}
+
+.newsletter .ui.red.button {
+  height: 33px;
+  border-radius: 8px !important;
+  margin-left: -8px;
+}
+
+.payment-methods {
+  margin-top: 30px;
+}
+
+.payment-methods > img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  margin-right: 5px;
+}
+
+.payment-methods > img:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+.footer-logo {
+  margin-left: -30px;
+}
+.ui.modal.login-modal {
+  max-height: calc(100vh - 50px);
+  padding: 0;
+  background: transparent;
+  border-radius: 8xp !important;
+  overflow: hidden;
+}
+
+.loginbg {
+  max-height: calc(100vh - 50px);
+  margin-left: -2px;
+}
+
+.ui.modal.login-modal .content-wrapper {
+  display: flex;
+}
+
+.ui.modal.login-modal .modalform {
+  justify-self: stretch;
+  background: #fff url(../images/logo.png) bottom 30px left 55% no-repeat;
+  flex: 1 1 auto;
+  padding: 45px 90px 20px 45px;
+}
+
+.ui.modal.login-modal .ui.tabular.menu {
+  justify-content: center;
+  -webkit-box-pack: justify;
+  min-height: auto;
+  border-bottom: 1px solid #414141 !important;
+  padding-bottom: 30px;
+}
+
+.ui.modal.login-modal .ui.tabular.menu .item {
+  border: none;
+  font-family: "Poppins Medium", sans-serif;
+  color: #414141;
+  min-width: 80px;
+  font-size: 16px;
+  min-height: auto !important;
+  font-weight: normal !important;
+  height: 30px;
+  padding: 0;
+}
+
+.ui.modal.login-modal .ui.tabular.menu:after {
+  display: none;
+}
+
+.ui.modal.login-modal .ui.tabular.menu .active.item {
+  border: none;
+  color: #e62525;
+  background: none;
+}
+
+.ui.modal.login-modal .ui.segment {
+  border: none;
+  margin: 0 !important;
+  background: transparent;
+}
+
+.socialbtns {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 40px;
+}
+
+.socialbtns .ui.button {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-family: "Poppins Regular", sans-serif;
+  border-radius: 8px;
+}
+
+.ui.modal.login-modal .ui.form input {
+  background: #e7e7e7;
+  height: 60px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 16px;
+}
+
+.ui.form .remeberme {
+  color: rgba(110, 110, 110, 0.69);
+  cursor: pointer;
+}
+
+.ui.checkbox input:checked ~ .box:before,
+.ui.checkbox input:checked ~ label:before,
+.ui.checkbox input:checked:focus ~ label:before {
+  background: #55f312;
+  border-color: #55f312;
+}
+
+.ui.checkbox input:checked ~ .box:after,
+.ui.checkbox input:checked ~ label:after,
+.ui.checkbox input:checked:focus ~ label:after {
+  color: #fff;
+}
+
+a.redlink {
+  color: #ff0404;
+}
+
+a.forgot-password {
+  float: right;
+}
+
+.ui.modal.login-modal .ui.red.button {
+  height: 50px;
+  font-size: 20px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field > img {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.ui.modal.login-modal .ui.form .password-field input {
+  padding-left: 40px;
+  background-image: url(../images/lock.svg);
+  background-position: 15px 17px;
+  background-repeat: no-repeat;
+}
+
+.ui.modal.login-modal .tos {
+  font-size: 13px;
+}
+
+.ui.modal.login-modal .ui.form .centered .ui.red.button {
+  margin: 25px 0 25px;
+}

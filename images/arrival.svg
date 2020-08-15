@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_21" data-name="Rectangle 21" width="16" height="16" transform="translate(-0.216)" fill="#e62525" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8" data-name="Mask Group 8" transform="translate(0.216)" clip-path="url(#clip-path)">
+    <path id="airplane_landing" d="M8.6,2.065v6.9L4.373,7.853,3.664,5.946,2.581,5.7v4.347L16.472,13.73v0a1.29,1.29,0,1,0,.546-2.52l-4.3-1.149L10.309,2.448ZM2.581,16.344v1.72H18.065v-1.72Z" transform="translate(-2.323 -2.065)" fill="#e62525"/>
+  </g>
+</svg>

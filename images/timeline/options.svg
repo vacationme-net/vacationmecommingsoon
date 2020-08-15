@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6" height="21" viewBox="0 0 6 21">
+  <g id="options" transform="translate(6.091) rotate(90)">
+    <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="2.5" cy="3" rx="2.5" ry="3" transform="translate(0 0.091)" fill="#797979"/>
+    <ellipse id="Ellipse_2-2" data-name="Ellipse 2" cx="2.5" cy="3" rx="2.5" ry="3" transform="translate(8 0.091)" fill="#797979"/>
+    <ellipse id="Ellipse_2-3" data-name="Ellipse 2" cx="2.5" cy="3" rx="2.5" ry="3" transform="translate(16 0.091)" fill="#797979"/>
+  </g>
+</svg>
