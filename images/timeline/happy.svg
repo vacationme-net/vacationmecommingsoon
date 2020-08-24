@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28.728" height="28.374" viewBox="0 0 28.728 28.374">
+  <defs>
+    <filter id="happy" x="0" y="0" width="28.728" height="28.374" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#happy)">
+    <path id="happy-2" data-name="happy" d="M11.864,2A9.788,9.788,0,0,0,2,11.687a9.788,9.788,0,0,0,9.864,9.687,9.788,9.788,0,0,0,9.864-9.687A9.788,9.788,0,0,0,11.864,2ZM15.3,8.739A1.264,1.264,0,1,1,14.009,10,1.275,1.275,0,0,1,15.3,8.739Zm-6.862,0A1.264,1.264,0,1,1,7.147,10,1.275,1.275,0,0,1,8.433,8.739Zm9.356,5.3a7.944,7.944,0,0,1-5.925,3.125A7.944,7.944,0,0,1,5.94,14.038a.417.417,0,0,1,.1-.587.434.434,0,0,1,.6.1,7.2,7.2,0,0,0,5.227,2.773,7.2,7.2,0,0,0,5.227-2.772.434.434,0,0,1,.6-.1A.416.416,0,0,1,17.789,14.038Z" transform="translate(0.5 0.5)" fill="#fff"/>
+  </g>
+</svg>
