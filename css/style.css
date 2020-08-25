@@ -27,13 +27,33 @@ body {
   padding: 0 15px;
 }
 
-.nav-menu.ui.menu .right .item {
-  color: #e62525;
+.ui.red.button:focus,
+.ui.red.buttons .button:focus,
+.ui.red.button:hover,
+.ui.red.buttons .button:hover {
+  background-color: #ff0404;
 }
 
-.item.logo {
+.nav-menu.ui.menu .right .item {
+  color: #ff0404;
+  font-size: 13px;
+}
+
+.ui.menu .item {
+  font-weight: 100;
+}
+
+.nav-menu.ui.menu.secondary .item:not(.logo):hover {
+  background: transparent;
+}
+
+.nav-menu.ui.menu.secondary .item.logo {
+  width: 105px;
+  overflow: hidden;
+  height: 40px;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+  background: url(../images/logo.png) left center no-repeat;
 }
 
 .form-wrapper {
@@ -82,7 +102,7 @@ body {
 
 .form-wrapper .ui.tabular.menu .active.item {
   border: none;
-  border-bottom: 3px solid #e62525;
+  border-bottom: 3px solid #ff0404;
   background: none;
 }
 
@@ -118,11 +138,11 @@ body {
 .ui.radio.checkbox input:focus ~ label:before,
 .ui.radio.checkbox input:focus:checked ~ label:before {
   background-color: transparent;
-  border-color: #e62525 !important;
+  border-color: #ff0404 !important;
 }
 .ui.radio.checkbox input:checked ~ label:after,
 .ui.radio.checkbox input:focus:checked ~ label:after {
-  background-color: #e62525;
+  background-color: #ff0404;
 }
 
 .form-wrapper .ui.form .fields:not(.inline) > .field {
@@ -159,7 +179,7 @@ body {
 }
 
 .ui.red.button {
-  background: #e62525;
+  background: #ff0404;
   font-weight: normal;
   font-family: "Poppins Regular", sans-serif;
 }
@@ -242,25 +262,21 @@ body {
 }
 
 #upload .header-text {
-  font-size: 30px;
+  font-size: 21px;
   line-height: 40px;
   color: #636363;
 }
 
-.banner .ui.red.button {
-  height: 57px;
-  width: 291px;
+.banner .ui.red.button,
+#upload .ui.red.button {
+  height: 40px;
+  width: 260px;
   border-radius: 12px;
-  font-size: 25px;
+  font-size: 16px;
   padding: 0;
 }
 
 #upload .ui.red.button {
-  height: 57px;
-  width: 358px;
-  border-radius: 12px;
-  font-size: 25px;
-  padding: 0;
   margin: 20px 0 0 0;
 }
 
@@ -269,16 +285,17 @@ body {
   justify-content: space-between;
   padding: 0 15px;
   line-height: 1.2;
+  height: 195px;
 }
 
 .banner-text {
   color: #fff;
-  font-size: 45px;
+  font-size: 35px;
   text-align: center;
 }
 
 .banner-text span {
-  font-size: 40px;
+  font-size: 28px;
 }
 
 .baner-tiles-wrapper {
@@ -288,13 +305,18 @@ body {
 }
 
 .banner-tiles {
-  height: 223px;
-  width: 169px;
+  height: 158px;
+  width: 120px;
   border-radius: 11px;
   margin: 0 15px;
   position: relative;
   cursor: pointer;
   transition: all 0.2s;
+  overflow: hidden;
+}
+
+.banner-tiles img {
+  max-width: 100%;
 }
 
 .banner-tiles:hover {
@@ -304,7 +326,7 @@ body {
 .imglabel {
   font-family: "Poppins Medium", sans-serif;
   color: #fff;
-  font-size: 15px;
+  font-size: 12px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -312,12 +334,12 @@ body {
   text-align: center;
   background: rgba(42, 15, 34, 0.7);
   border-radius: 11px;
-  line-height: 34px;
+  -webkit-border-radius: 11px;
+  line-height: 24px;
 }
 
 #events {
   background: url(../images/events-bg.jpg) left center no-repeat;
-  height: 270px;
 }
 
 #events .banner-text {
@@ -329,28 +351,30 @@ body {
 
 #shopping {
   background: url(../images/shopping-bg.jpg) left center no-repeat;
-  height: 275px;
   align-items: center;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
 #shopping .imglabel {
   background: rgba(4, 28, 68, 0.84);
 }
 #games {
   background: url(../images/games-bg.jpg) left center no-repeat;
-  height: 250px;
   align-items: center;
+  height: 177px;
 }
 
 footer {
   background: #f1f1f1;
   padding: 50px 20px 10px;
+  font-size: 12px;
 }
 
 .footer-links a {
   color: #5f5f5f;
-  font-size: 14px;
+  font-size: 12px;
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .social-links {
@@ -361,11 +385,12 @@ footer {
 }
 
 .social-links a img {
+  width: 37px;
 }
 
 .social-links .copyright {
   color: #5f5f5f;
-  font-size: 14px;
+  font-size: 11px;
   text-align: center;
   flex: 1 0 100%;
   padding-top: 3em;
@@ -440,7 +465,7 @@ footer {
   -webkit-box-pack: justify;
   min-height: auto;
   border-bottom: 1px solid #414141 !important;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .ui.modal.login-modal .ui.tabular.menu .item {
@@ -448,7 +473,7 @@ footer {
   font-family: "Poppins Medium", sans-serif;
   color: #414141;
   min-width: 80px;
-  font-size: 16px;
+  font-size: 1em;
   min-height: auto !important;
   font-weight: normal !important;
   height: 30px;
@@ -461,7 +486,7 @@ footer {
 
 .ui.modal.login-modal .ui.tabular.menu .active.item {
   border: none;
-  color: #e62525;
+  color: #ff0404;
   background: none;
 }
 
@@ -474,11 +499,11 @@ footer {
 .socialbtns {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0 40px;
+  padding: 10px 0 25px;
 }
 
 .socialbtns .ui.button {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: normal;
   font-family: "Poppins Regular", sans-serif;
   border-radius: 8px;
@@ -486,15 +511,15 @@ footer {
 
 .ui.modal.login-modal .ui.form input {
   background: #e7e7e7;
-  height: 60px;
+  height: 50px;
   border: none;
   border-radius: 8px;
   font-family: "Poppins Regular", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .ui.form .remeberme {
-  color: rgba(110, 110, 110, 0.69);
+  color: rgba(110, 110, 110, 0.69) !important;
   cursor: pointer;
 }
 
@@ -520,8 +545,9 @@ a.forgot-password {
 }
 
 .ui.modal.login-modal .ui.red.button {
-  height: 50px;
-  font-size: 20px;
+  height: 40px;
+  font-size: 16px;
+  margin: 15px 0 15px;
 }
 
 .centered {
@@ -537,19 +563,17 @@ a.forgot-password {
   right: 25px;
   top: 20px;
   cursor: pointer;
+  width: 21px;
 }
 
 .ui.modal.login-modal .ui.form .password-field input {
   padding-left: 40px;
   background-image: url(../images/lock.svg);
-  background-position: 15px 17px;
+  background-position: 15px 18px;
+  background-size: 11px;
   background-repeat: no-repeat;
 }
 
 .ui.modal.login-modal .tos {
   font-size: 13px;
-}
-
-.ui.modal.login-modal .ui.form .centered .ui.red.button {
-  margin: 25px 0 25px;
 }

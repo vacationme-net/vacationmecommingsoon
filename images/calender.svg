@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
   <defs>
     <clipPath id="clip-path">
-      <rect id="Rectangle_23" data-name="Rectangle 23" width="16" height="16" transform="translate(0.074)" fill="#e62525" stroke="#707070" stroke-width="1"/>
+      <rect id="Rectangle_23" data-name="Rectangle 23" width="16" height="16" transform="translate(0.074)" fill="#ff0404" stroke="#707070" stroke-width="1"/>
     </clipPath>
   </defs>
   <g id="Mask_Group_9" data-name="Mask Group 9" transform="translate(-0.074)" clip-path="url(#clip-path)">
-    <path id="calendar" d="M6.261,2.783v.7H3.478v15.3h15.3V3.478H16v-.7H14.609v.7H7.652v-.7ZM4.87,4.87H6.261v.7H7.652v-.7h6.957v.7H16v-.7h1.391V6.261H4.87Zm0,2.783H17.391v9.739H4.87ZM9.043,9.043v1.391h1.391V9.043Zm2.783,0v1.391h1.391V9.043Zm2.783,0v1.391H16V9.043ZM6.261,11.826v1.391H7.652V11.826Zm2.783,0v1.391h1.391V11.826Zm2.783,0v1.391h1.391V11.826Zm2.783,0v1.391H16V11.826ZM6.261,14.609V16H7.652V14.609Zm2.783,0V16h1.391V14.609Zm2.783,0V16h1.391V14.609Z" transform="translate(-3.13 -2.783)" fill="#e62525"/>
+    <path id="calendar" d="M6.261,2.783v.7H3.478v15.3h15.3V3.478H16v-.7H14.609v.7H7.652v-.7ZM4.87,4.87H6.261v.7H7.652v-.7h6.957v.7H16v-.7h1.391V6.261H4.87Zm0,2.783H17.391v9.739H4.87ZM9.043,9.043v1.391h1.391V9.043Zm2.783,0v1.391h1.391V9.043Zm2.783,0v1.391H16V9.043ZM6.261,11.826v1.391H7.652V11.826Zm2.783,0v1.391h1.391V11.826Zm2.783,0v1.391h1.391V11.826Zm2.783,0v1.391H16V11.826ZM6.261,14.609V16H7.652V14.609Zm2.783,0V16h1.391V14.609Zm2.783,0V16h1.391V14.609Z" transform="translate(-3.13 -2.783)" fill="#ff0404"/>
   </g>
 </svg>

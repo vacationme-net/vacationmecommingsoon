@@ -20,10 +20,14 @@
   src: url(../fonts/Poppins-Light.ttf);
 }
 
+* {
+  font-weight: 100 !important;
+}
+
 body {
   font-family: "Poppins Regular", sans-serif;
   background: #e7e7e7;
-  padding-top: 58px;
+  padding-top: 41px;
 }
 
 .navbar-container {
@@ -36,8 +40,10 @@ body {
   top: 0;
   z-index: 50;
 }
-.ui.menu {
+.ui.menu,
+.nav-menu.ui.menu.secondary {
   font-family: "Poppins Regular", sans-serif;
+  font-size: 14px;
 }
 
 .container-fluid {
@@ -45,25 +51,29 @@ body {
 }
 
 .nav-menu.ui.menu.secondary .item.logo {
-  width: 170px;
+  width: 105px;
   overflow: hidden;
+  height: 40px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  background: url(../images/logo.png) left center no-repeat;
+}
+
+.ui.menu .item {
+  font-weight: 100;
 }
 
 .nav-menu.ui.menu.secondary .item {
   color: #5f5f5f;
+  font-size: 13px;
 }
-.nav-menu.ui.menu.secondary .item:hover {
-  background: none;
+.nav-menu.ui.menu.secondary .item:not(.logo):hover {
+  background: transparent;
 }
 
 .nav-menu.ui.menu.secondary .active.item {
   background: none;
   color: #ff0404;
-}
-
-.item.logo {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
 }
 
 .ui.menu .item > .input.searchbar input {
@@ -73,14 +83,17 @@ body {
   width: 300px;
   color: #6e6e6e;
   font-family: "Poppins Regular", sans-serif;
-  font-weight: 100;
-  padding-left: 50px !important;
+  font-weight: 100 !important;
+  padding: 5px 10px 5px 40px !important;
+  font-size: 12px !important;
+  height: 25px !important;
 }
 
-.input.searchbar i.icon {
+.ui.icon.input.searchbar > i.icon {
   background: #d2d2d2;
   border-radius: 100% !important;
-  width: 33px;
+  width: 25px;
+  height: 25px;
 }
 
 .right-panel {
@@ -130,8 +143,15 @@ body {
   background: transparent;
   padding: 10px 0px;
   border: none;
-  border-radius: 10px;
   margin: 0 !important;
+}
+
+hr.red {
+  border-top: 2px solid #ff0404;
+  height: 0px;
+  display: block;
+  width: 75%;
+  margin: 5px auto 0;
 }
 
 .right-panel .ui.form .fields {
@@ -339,7 +359,7 @@ body {
   border: 5px solid #fff;
   border-radius: 100%;
   background: url(https://semantic-ui.com/images/avatar2/large/elyse.png)
-    center/150px no-repeat;
+    center/cover no-repeat;
 }
 
 .userinfo-wrapper .profile-image img {
