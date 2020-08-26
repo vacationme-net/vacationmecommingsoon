@@ -367,6 +367,27 @@ hr.red {
   padding-top: 10px;
 }
 
+.content-panel .coverphotowrapper {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.content-panel .coverphotowrapper .corner.label {
+  z-index: 6;
+  transform: rotate(90deg);
+  bottom: 0;
+  top: auto;
+}
+
+.content-panel .corner.label:after {
+  border-right-color: rgba(255, 255, 255, 0.7);
+}
+
+.content-panel .coverphotowrapper .corner.label i.icon {
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
 .content-panel .coverphoto {
   max-width: 100%;
   position: relative;
@@ -414,6 +435,22 @@ hr.red {
   border-radius: 100%;
   background: url(https://semantic-ui.com/images/avatar2/large/elyse.png)
     center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.upload-profile-img {
+  height: 22px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  height: 22px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .userinfo-wrapper .profile-image img {
