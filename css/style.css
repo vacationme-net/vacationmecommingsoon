@@ -43,6 +43,18 @@ body {
   font-weight: 100;
 }
 
+.ui.top.attached.menu > .item:first-child {
+  text-align: left;
+}
+
+.ui.top.attached.menu > .item:last-child {
+  text-align: right;
+}
+.ui.top.attached.menu > .item {
+  text-align: center;
+  display: block;
+}
+
 .nav-menu.ui.menu.secondary .item:not(.logo):hover {
   background: transparent;
 }
@@ -53,7 +65,8 @@ body {
   height: 40px;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  background: url(../images/logo.png) left center no-repeat;
+  padding-left: 0 !important;
+  background: url(../images/logo.png) left -11px center no-repeat;
 }
 
 .form-wrapper {
@@ -61,6 +74,7 @@ body {
   padding: 50px 17px;
   display: flex;
   justify-content: space-between;
+  height: 331px;
 }
 
 .form-wrapper .banner-header {
@@ -74,6 +88,8 @@ body {
 .form-wrapper .ui.form {
   max-width: 645px;
   width: 100%;
+  align-self: flex-end;
+  justify-self: baseline;
 }
 
 .form-wrapper .ui.tabular.menu {
@@ -92,7 +108,7 @@ body {
   font-size: 16px;
   min-height: auto !important;
   font-weight: normal !important;
-  height: 30px;
+  height: 25px;
   padding: 0;
 }
 
@@ -104,6 +120,7 @@ body {
   border: none;
   border-bottom: 3px solid #ff0404;
   background: none;
+  color: #ff0404;
 }
 
 .form-wrapper .ui.segment {
@@ -114,23 +131,31 @@ body {
   margin: 0 !important;
 }
 
-.form-wrapper .ui.form .fields {
-  margin-bottom: 0px;
+.form-wrapper .ui.form .segment > .fields {
+  margin-bottom: 20px;
   padding: 0;
 }
+
+.form-wrapper .ui.form .segment > .fields:last-child {
+  margin-bottom: 0px;
+}
+
 .form-wrapper .ui.form .inline.fields {
   margin: 0 0 17px;
 }
 
-.form-wrapper .ui.form .fields:nth-child(2) {
-  margin-bottom: 30px;
-}
-
 .form-wrapper .ui.checkbox label {
-  font-size: 10px;
+  font-size: 11px;
   font-family: "Poppins Regular", sans-serif;
   color: #fff !important;
   cursor: pointer;
+  margin-left: 5px;
+}
+
+.form-wrapper .ui.checkbox label:before,
+.form-wrapper .ui.checkbox input:focus ~ label:before {
+  border-color: transparent !important;
+  background-color: #ebe8e8;
 }
 
 .ui.radio.checkbox input:checked ~ label:before,
@@ -158,24 +183,27 @@ body {
   height: 44px;
   font-size: 13px;
   padding-left: 8px;
-  padding-right: 8px;
+  padding-right: 15px;
   background: #fff;
   font-family: "Poppins Regular", sans-serif;
 }
 
-.form-wrapper .ui.form .fields > .field:nth-child(2) > * {
-  border-left: none;
+.form-wrapper .ui.form .three.fields > .field:nth-child(2) > .input {
   border-right: none;
+  border-left: 1px solid #707070 !important;
 }
 
-.form-wrapper .ui.form .fields > .field:first-child > * {
+.form-wrapper .ui.form .three.fields > .field:first-child > .input {
+  border-right: none;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
 
-.form-wrapper .ui.form .fields > .field:last-child > * {
+.form-wrapper .ui.form .three.fields > .field:last-child > .input {
+  border-right: none;
   border-top-right-radius: 8px !important;
   border-bottom-right-radius: 8px !important;
+  border-left: 1px solid #707070 !important;
 }
 
 .ui.red.button {
@@ -206,7 +234,7 @@ body {
 .form-wrapper .ui.form .fields > .field button.red {
   border: none;
   color: #fff;
-  border-radius: 0;
+  border-radius: 0 8px 8px 0;
   height: 44px;
   width: 100%;
 }
@@ -236,23 +264,41 @@ body {
   text-align: right;
 }
 
-#date-range {
-  background: #fff url(../images/calender.svg) 12px center no-repeat;
+.date-range {
+  background: #fff url(../images/calender.svg) 12px center no-repeat !important;
 }
 
-#departing_from {
-  background: #fff url(../images/departure.svg) 12px center no-repeat;
+.departing_from {
+  background: #fff url(../images/departure.svg) 12px center no-repeat !important;
 }
 
-#going_to {
-  background: #fff url(../images/arrival.svg) 12px center no-repeat;
-  border-left: 1px solid #707070;
-  border-right: 1px solid #707070;
+.going_to {
+  background: #fff url(../images/arrival.svg) 12px center no-repeat !important;
 }
 
-#passengers {
-  background: #fff url(../images/user.svg) 12px center no-repeat;
-  border-right: 1px solid #707070;
+.passengers {
+  background: #fff url(../images/user.svg) 12px center no-repeat !important;
+}
+
+.location {
+  background: #fff url(../images/location.svg) 12px center no-repeat !important;
+}
+
+.mr .location {
+  border-right: 0px solid #707070 !important;
+  border-radius: 8px !important;
+}
+
+.rooms {
+  background: #fff url(../images/rooms.svg) 12px center no-repeat !important;
+}
+
+.time {
+  background: #fff url(../images/clock.svg) 12px center no-repeat !important;
+}
+
+.ship {
+  background: #fff url(../images/cruise.svg) 12px center no-repeat !important;
 }
 
 #upload {
@@ -350,16 +396,22 @@ body {
 }
 
 #shopping {
-  background: url(../images/shopping-bg.jpg) left center no-repeat;
+  background: url(../images/shopping-bg.jpg) left center/cover no-repeat;
   align-items: center;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
+  height: 185px;
 }
+
+#shopping .ui.red.button {
+  margin-right: 235px;
+}
+
 #shopping .imglabel {
   background: rgba(4, 28, 68, 0.84);
 }
 #games {
-  background: url(../images/games-bg.jpg) left center no-repeat;
+  background: url(../images/games-bg.jpg) left center/cover no-repeat;
   align-items: center;
   height: 177px;
 }
@@ -523,11 +575,24 @@ footer {
   cursor: pointer;
 }
 
+.ui.modal.login-modal .ui.checkbox input:checked ~ .box:before,
+.ui.modal.login-modal .ui.checkbox input:checked ~ label:before,
+.ui.modal.login-modal .ui.checkbox input:checked:focus ~ label:before {
+  background: #55f312;
+  border-color: #55f312;
+}
+
+.ui.modal.login-modal .ui.checkbox input:checked ~ .box:after,
+.ui.modal.login-modal .ui.checkbox input:checked ~ label:after,
+.ui.modal.login-modal .ui.checkbox input:checked:focus ~ label:after {
+  color: #fff;
+}
+
 .ui.checkbox input:checked ~ .box:before,
 .ui.checkbox input:checked ~ label:before,
 .ui.checkbox input:checked:focus ~ label:before {
-  background: #55f312;
-  border-color: #55f312;
+  background: #ff0404;
+  border-color: #ff0404;
 }
 
 .ui.checkbox input:checked ~ .box:after,
