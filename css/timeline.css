@@ -986,3 +986,47 @@ i.icon .small {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
+
+/* on borading */
+.onboarding {
+  background: url(../images/onboardingbg.jpg) left bottom -50px/100% no-repeat;
+  padding: 5px 15px;
+  height: calc(100vh - 40px);
+}
+
+.onboarding-form {
+  background: #fff;
+  min-height: calc(100vh - 60px);
+  padding: 35px 15px;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 21px;
+  color: #414141;
+}
+
+.input-dp {
+  width: 155px;
+  height: 155px;
+  border-radius: 100%;
+  background: #e9e9e9 url(../images/upload.svg) top 10px center no-repeat;
+  text-align: center;
+  color: #4d4d4d;
+  border: 2px dashed #707070;
+  overflow: hidden;
+  position: relative;
+  margin: 30px auto;
+  font-size: 8px;
+  padding: 65px 20px 10px;
+  line-height: 1.2;
+}
+
+.input-dp input {
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  position: absolute;
+}

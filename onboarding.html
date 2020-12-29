@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Vacationme</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/timeline.css" />
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="semantic-ui/semantic.min.js"></script>
+</head>
+
+<body>
+    <div class="ui container-fluid navbar-container">
+        <div class="ui secondary menu nav-menu">
+            <a href="index.html" class="ui item logo">
+
+            </a>
+            <div class="item">
+                <div class="ui left icon input searchbar">
+                    <i class="search icon"></i>
+                    <input type="text" placeholder="Search...">
+
+                </div>
+            </div>
+
+            <div class="right menu">
+                <a class="ui item active">
+                    Home
+                </a>
+                <a class="ui item">
+                    Offers for you
+                </a>
+                <a class="ui item">
+                    Book tickets
+                </a>
+                <a class="ui item">
+                    Events & Shows
+                </a>
+                <a class="ui item">
+                    Buy pc games
+                </a>
+                <a class="ui item">
+                    Download app
+                </a>
+                <div class="ui right dropdown item">
+                    More
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item">Settings</div>
+                        <div class="item">Edit Profile</div>
+                        <div class="item">Logout</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="flex-wrapper onboarding">
+
+            <div class="onboarding-form">
+                <h2>Hi there,Welcome to Vacationme !</h2>
+                <p class="sbold">Let's create your profile</p>
+                <div class="input-dp">
+                    <input name="avatar" type="file" />
+                    Drag and drop
+                    To upload profile photo
+                    <br /><br /><br />
+                    Click here to brows and upload
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+    <script>
+        $('.menu .item').tab();
+        $('.ui.dropdown').dropdown();
+        function hidemenu() {
+            $('.leftmenu').toggleClass('collapse');
+        }
+    </script>
+</body>
+
+</html>
