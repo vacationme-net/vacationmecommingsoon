@@ -1,644 +1,655 @@
 @font-face {
-  font-family: "Poppins Regular";
-  src: url(../fonts/Poppins-Regular.ttf);
+    font-family: "Poppins Regular";
+    src: url(../fonts/Poppins-Regular.ttf);
 }
+
 @font-face {
-  font-family: "Poppins Medium";
-  src: url(../fonts/Poppins-Medium.ttf);
+    font-family: "Poppins Medium";
+    src: url(../fonts/Poppins-Medium.ttf);
 }
+
 @font-face {
-  font-family: "Poppins Semibold";
-  src: url(../fonts/Poppins-SemiBold.ttf);
+    font-family: "Poppins Semibold";
+    src: url(../fonts/Poppins-SemiBold.ttf);
 }
+
 @font-face {
-  font-family: "Poppins Bold";
-  src: url(../fonts/Poppins-Bold.ttf);
+    font-family: "Poppins Bold";
+    src: url(../fonts/Poppins-Bold.ttf);
 }
 
 body {
-  font-family: "Poppins Regular", sans-serif;
+    font-family: "Poppins Regular", sans-serif;
 }
 
 .ui.menu {
-  font-family: "Poppins Regular", sans-serif;
+    font-family: "Poppins Regular", sans-serif;
 }
 
 .container-fluid {
-  padding: 0 15px;
+    padding: 0 15px;
 }
 
 .ui.red.button:focus,
 .ui.red.buttons .button:focus,
 .ui.red.button:hover,
 .ui.red.buttons .button:hover {
-  background-color: #ff0404;
+    background-color: #ff0404;
 }
 
 .nav-menu.ui.menu .right .item {
-  color: #ff0404;
-  font-size: 13px;
+    color: #ff0404;
+    font-size: 13px;
 }
 
 .ui.menu .item {
-  font-weight: 100;
+    font-weight: 100;
 }
 
-.ui.top.attached.menu > .item:first-child {
-  text-align: left;
+.ui.top.attached.menu>.item:first-child {
+    text-align: left;
 }
 
-.ui.top.attached.menu > .item:last-child {
-  text-align: right;
+.ui.top.attached.menu>.item:last-child {
+    text-align: right;
 }
-.ui.top.attached.menu > .item {
-  text-align: center;
-  display: block;
+
+.ui.top.attached.menu>.item {
+    text-align: center;
+    display: block;
 }
 
 .nav-menu.ui.menu.secondary .item:not(.logo):hover {
-  background: transparent;
+    background: transparent;
 }
 
 .nav-menu.ui.menu.secondary .item.logo {
-  width: 105px;
-  overflow: hidden;
-  height: 40px;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  padding-left: 0 !important;
-  background: url(../images/logo.png) left -11px center no-repeat;
+    width: 105px;
+    overflow: hidden;
+    height: 40px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    background: url(../images/logo.png) left -11px center no-repeat;
 }
 
 .form-wrapper {
-  background: url(../images/flightsbg.jpg) bottom right/cover no-repeat;
-  padding: 50px 17px;
-  display: flex;
-  justify-content: space-between;
-  height: 331px;
+    background: url(../images/flightsbg.jpg) bottom right/cover no-repeat;
+    padding: 50px 17px;
+    display: flex;
+    justify-content: space-between;
+    height: 331px;
 }
 
 .form-wrapper .banner-header {
-  align-self: flex-end;
-  justify-self: last baseline;
-  max-width: 552px;
-  color: #fff;
-  font-size: 30px;
+    align-self: flex-end;
+    justify-self: last baseline;
+    max-width: 552px;
+    color: #fff;
+    font-size: 30px;
 }
 
 .form-wrapper .ui.form {
-  max-width: 645px;
-  width: 100%;
-  align-self: flex-end;
-  justify-self: baseline;
+    max-width: 645px;
+    width: 100%;
+    align-self: flex-end;
+    justify-self: baseline;
 }
 
 .form-wrapper .ui.tabular.menu {
-  justify-content: space-between;
-  border-bottom: none;
-  margin-bottom: 5px;
-  -webkit-box-pack: justify;
-  min-height: auto;
+    justify-content: space-between;
+    border-bottom: none;
+    margin-bottom: 5px;
+    -webkit-box-pack: justify;
+    min-height: auto;
 }
 
 .form-wrapper .ui.tabular.menu .item {
-  border: none;
-  font-family: "Poppins Medium", sans-serif;
-  color: #fff;
-  min-width: 80px;
-  font-size: 16px;
-  min-height: auto !important;
-  font-weight: normal !important;
-  height: 25px;
-  padding: 0;
+    border: none;
+    font-family: "Poppins Medium", sans-serif;
+    color: #fff;
+    min-width: 80px;
+    font-size: 16px;
+    min-height: auto !important;
+    font-weight: normal !important;
+    height: 25px;
+    padding: 0;
 }
 
 .form-wrapper .ui.tabular.menu:after {
-  display: none;
+    display: none;
 }
 
 .form-wrapper .ui.tabular.menu .active.item {
-  border: none;
-  border-bottom: 3px solid #ff0404;
-  background: none;
-  color: #ff0404;
+    border: none;
+    border-bottom: 3px solid #ff0404;
+    background: none;
+    color: #ff0404;
 }
 
 .form-wrapper .ui.segment {
-  background: rgba(255, 255, 255, 0.25);
-  padding: 25px 17px 17px;
-  border: none;
-  border-radius: 10px;
-  margin: 0 !important;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 25px 17px 17px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 !important;
 }
 
-.form-wrapper .ui.form .segment > .fields {
-  margin-bottom: 20px;
-  padding: 0;
+.form-wrapper .ui.form .segment>.fields {
+    margin-bottom: 20px;
+    padding: 0;
 }
 
-.form-wrapper .ui.form .segment > .fields:last-child {
-  margin-bottom: 0px;
+.form-wrapper .ui.form .segment>.fields:last-child {
+    margin-bottom: 0px;
 }
 
 .form-wrapper .ui.form .inline.fields {
-  margin: 0 0 17px;
+    margin: 0 0 17px;
 }
 
 .form-wrapper .ui.checkbox label {
-  font-size: 11px;
-  font-family: "Poppins Regular", sans-serif;
-  color: #fff !important;
-  cursor: pointer;
-  margin-left: 5px;
+    font-size: 11px;
+    font-family: "Poppins Regular", sans-serif;
+    color: #fff !important;
+    cursor: pointer;
+    margin-left: 5px;
 }
 
 .form-wrapper .ui.checkbox label:before,
-.form-wrapper .ui.checkbox input:focus ~ label:before {
-  border-color: transparent !important;
-  background-color: #ebe8e8;
+.form-wrapper .ui.checkbox input:focus~label:before {
+    border-color: transparent !important;
+    background-color: #ebe8e8;
 }
 
-.ui.radio.checkbox input:checked ~ label:before,
-.ui.radio.checkbox input ~ label:before,
-.ui.radio.checkbox input:focus ~ label:before,
-.ui.radio.checkbox input:focus:checked ~ label:before {
-  background-color: transparent;
-  border-color: #ff0404 !important;
-}
-.ui.radio.checkbox input:checked ~ label:after,
-.ui.radio.checkbox input:focus:checked ~ label:after {
-  background-color: #ff0404;
+.ui.radio.checkbox input:checked~label:before,
+.ui.radio.checkbox input~label:before,
+.ui.radio.checkbox input:focus~label:before,
+.ui.radio.checkbox input:focus:checked~label:before {
+    background-color: transparent;
+    border-color: #ff0404 !important;
 }
 
-.form-wrapper .ui.form .fields:not(.inline) > .field {
-  padding: 0;
+.ui.radio.checkbox input:checked~label:after,
+.ui.radio.checkbox input:focus:checked~label:after {
+    background-color: #ff0404;
 }
 
-.form-wrapper .ui.form .fields > .field > input,
-.form-wrapper .ui.form .fields > .field > .input {
-  border: 1px solid transparent;
-  color: #6b6b6b;
-  text-align: right;
-  border-radius: 0;
-  height: 44px;
-  font-size: 13px;
-  padding-left: 8px;
-  padding-right: 15px;
-  background: #fff;
-  font-family: "Poppins Regular", sans-serif;
+.form-wrapper .ui.form .fields:not(.inline)>.field {
+    padding: 0;
 }
 
-.form-wrapper .ui.form .three.fields > .field:nth-child(2) > .input {
-  border-right: none;
-  border-left: 1px solid #707070 !important;
+.form-wrapper .ui.form .fields>.field>input,
+.form-wrapper .ui.form .fields>.field>.input {
+    border: 1px solid transparent;
+    color: #6b6b6b;
+    text-align: right;
+    border-radius: 0;
+    height: 44px;
+    font-size: 13px;
+    padding-left: 8px;
+    padding-right: 15px;
+    background: #fff;
+    font-family: "Poppins Regular", sans-serif;
 }
 
-.form-wrapper .ui.form .three.fields > .field:first-child > .input {
-  border-right: none;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+.form-wrapper .ui.form .three.fields>.field:nth-child(2)>.input {
+    border-right: none;
+    border-left: 1px solid #707070 !important;
 }
 
-.form-wrapper .ui.form .three.fields > .field:last-child > .input {
-  border-right: none;
-  border-top-right-radius: 8px !important;
-  border-bottom-right-radius: 8px !important;
-  border-left: 1px solid #707070 !important;
+.form-wrapper .ui.form .three.fields>.field:first-child>.input {
+    border-right: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.form-wrapper .ui.form .three.fields>.field:last-child>.input {
+    border-right: none;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+    border-left: 1px solid #707070 !important;
 }
 
 .ui.red.button {
-  background: #ff0404;
-  font-weight: normal;
-  font-family: "Poppins Regular", sans-serif;
+    background: #ff0404;
+    font-weight: normal;
+    font-family: "Poppins Regular", sans-serif;
 }
 
-.form-wrapper .ui.labeled.input > .label {
-  color: rgba(107, 107, 107, 0.5);
-  background: #fff;
-  border-radius: 0px !important;
-  font-family: "Poppins Regular", sans-serif;
-  font-size: 13px;
-  font-weight: 100 !important;
-  line-height: 44px;
-  padding: 0;
-  text-align: left;
+.form-wrapper .ui.labeled.input>.label {
+    color: rgba(107, 107, 107, 0.5);
+    background: #fff;
+    border-radius: 0px !important;
+    font-family: "Poppins Regular", sans-serif;
+    font-size: 13px;
+    font-weight: 100 !important;
+    line-height: 44px;
+    padding: 0;
+    text-align: left;
 }
 
-.form-wrapper .ui.labeled.input > .input {
-  border-radius: 0;
-  border: none !important;
-  outline: none;
-  font-family: "Poppins Regular", sans-serif;
+.form-wrapper .ui.labeled.input>.input {
+    border-radius: 0;
+    border: none !important;
+    outline: none;
+    font-family: "Poppins Regular", sans-serif;
 }
 
-.form-wrapper .ui.form .fields > .field button.red {
-  border: none;
-  color: #fff;
-  border-radius: 0 8px 8px 0;
-  height: 44px;
-  width: 100%;
+.form-wrapper .ui.form .fields>.field button.red {
+    border: none;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+    height: 44px;
+    width: 100%;
 }
 
 .form-wrapper .ui.form .fields .input.input-wrap {
-  display: flex;
-  align-content: center;
+    display: flex;
+    align-content: center;
 }
 
 .form-wrapper .ui.form .fields .ui.dropdown {
-  border: none;
-  outline: none;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  background: transparent;
-  text-align: right;
-  margin-left: 15px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    background: transparent;
+    text-align: right;
+    margin-left: 15px;
 }
 
 .ui.selection.dropdown {
-  min-width: auto;
-  margin-top: 4px;
-  flex: 1 1 auto;
-  text-align: right;
+    min-width: auto;
+    margin-top: 4px;
+    flex: 1 1 auto;
+    text-align: right;
 }
+
 .ui.selection.dropdown input {
-  text-align: right;
+    text-align: right;
 }
 
 .date-range {
-  background: #fff url(../images/calender.svg) 12px center no-repeat !important;
+    background: #fff url(../images/calender.svg) 12px center no-repeat !important;
 }
 
 .departing_from {
-  background: #fff url(../images/departure.svg) 12px center no-repeat !important;
+    background: #fff url(../images/departure.svg) 12px center no-repeat !important;
 }
 
 .going_to {
-  background: #fff url(../images/arrival.svg) 12px center no-repeat !important;
+    background: #fff url(../images/arrival.svg) 12px center no-repeat !important;
 }
 
 .passengers {
-  background: #fff url(../images/user.svg) 12px center no-repeat !important;
+    background: #fff url(../images/user.svg) 12px center no-repeat !important;
 }
 
 .location {
-  background: #fff url(../images/location.svg) 12px center no-repeat !important;
+    background: #fff url(../images/location.svg) 12px center no-repeat !important;
 }
 
 .mr .location {
-  border-right: 0px solid #707070 !important;
-  border-radius: 8px !important;
+    border-right: 0px solid #707070 !important;
+    border-radius: 8px !important;
 }
 
 .rooms {
-  background: #fff url(../images/rooms.svg) 12px center no-repeat !important;
+    background: #fff url(../images/rooms.svg) 12px center no-repeat !important;
 }
 
 .time {
-  background: #fff url(../images/clock.svg) 12px center no-repeat !important;
+    background: #fff url(../images/clock.svg) 12px center no-repeat !important;
 }
 
 .ship {
-  background: #fff url(../images/cruise.svg) 12px center no-repeat !important;
+    background: #fff url(../images/cruise.svg) 12px center no-repeat !important;
 }
 
 #upload {
-  text-align: center;
-
-  padding: 15px 15px 40px;
+    text-align: center;
+    padding: 15px 15px 40px;
 }
 
 #upload .header-text {
-  font-size: 21px;
-  line-height: 40px;
-  color: #636363;
+    font-size: 21px;
+    line-height: 40px;
+    color: #636363;
 }
 
 .banner .ui.red.button,
 #upload .ui.red.button {
-  height: 40px;
-  width: 260px;
-  border-radius: 12px;
-  font-size: 16px;
-  padding: 0;
+    height: 40px;
+    width: 260px;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 0;
 }
 
 #upload .ui.red.button {
-  margin: 20px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 .banner {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 15px;
-  line-height: 1.2;
-  height: 195px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    line-height: 1.2;
+    height: 195px;
 }
 
 .banner-text {
-  color: #fff;
-  font-size: 35px;
-  text-align: center;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
 }
 
 .banner-text span {
-  font-size: 28px;
+    font-size: 28px;
 }
 
 .baner-tiles-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
 }
 
 .banner-tiles {
-  height: 158px;
-  width: 120px;
-  border-radius: 11px;
-  margin: 0 15px;
-  position: relative;
-  cursor: pointer;
-  transition: all 0.2s;
-  overflow: hidden;
+    height: 158px;
+    width: 120px;
+    border-radius: 11px;
+    margin: 0 15px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+    overflow: hidden;
 }
 
 .banner-tiles img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .banner-tiles:hover {
-  transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
 }
 
 .imglabel {
-  font-family: "Poppins Medium", sans-serif;
-  color: #fff;
-  font-size: 12px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  background: rgba(42, 15, 34, 0.7);
-  border-radius: 11px;
-  -webkit-border-radius: 11px;
-  line-height: 24px;
+    font-family: "Poppins Medium", sans-serif;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(42, 15, 34, 0.7);
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    line-height: 24px;
 }
 
 #events {
-  background: url(../images/events-bg.jpg) left center no-repeat;
+    background: url(../images/events-bg.jpg) left center no-repeat;
 }
 
 #events .banner-text {
-  padding-top: 10px;
+    padding-top: 10px;
 }
+
 #events .ui.red.button {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
 #shopping {
-  background: url(../images/shopping-bg.jpg) left center/cover no-repeat;
-  align-items: center;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  height: 185px;
+    background: url(../images/shopping-bg.jpg) left center/cover no-repeat;
+    align-items: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    height: 185px;
 }
 
 #shopping .ui.red.button {
-  margin-right: 235px;
+    margin-right: 235px;
 }
 
 #shopping .imglabel {
-  background: rgba(4, 28, 68, 0.84);
+    background: rgba(4, 28, 68, 0.84);
 }
+
 #games {
-  background: url(../images/games-bg.jpg) left center/cover no-repeat;
-  align-items: center;
-  height: 177px;
+    background: url(../images/games-bg.jpg) left center/cover no-repeat;
+    align-items: center;
+    height: 177px;
 }
 
 footer {
-  background: #f1f1f1;
-  padding: 50px 20px 10px;
-  font-size: 12px;
+    background: #f1f1f1;
+    padding: 50px 20px 10px;
+    font-size: 12px;
 }
 
 .footer-links a {
-  color: #5f5f5f;
-  font-size: 12px;
-  display: block;
-  margin-bottom: 20px;
+    color: #5f5f5f;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .social-links {
-  justify-content: space-around;
-  display: flex !important;
-  flex-wrap: wrap;
-  align-self: flex-end;
+    justify-content: space-around;
+    display: flex !important;
+    flex-wrap: wrap;
+    align-self: flex-end;
 }
 
 .social-links a img {
-  width: 37px;
+    width: 37px;
 }
 
 .social-links .copyright {
-  color: #5f5f5f;
-  font-size: 11px;
-  text-align: center;
-  flex: 1 0 100%;
-  padding-top: 3em;
+    color: #5f5f5f;
+    font-size: 11px;
+    text-align: center;
+    flex: 1 0 100%;
+    padding-top: 3em;
 }
 
 .newsletter {
-  float: right;
+    float: right;
 }
+
 .newsletter label {
-  display: block;
+    display: block;
 }
 
 .newsletter .ui.action input {
-  height: 33px;
-  border: 0;
-  background: #d6d6d6;
-  border-radius: 8px 0 0 8px;
-  width: 250px !important;
-  font-family: "Poppins Regular", sans-serif;
+    height: 33px;
+    border: 0;
+    background: #d6d6d6;
+    border-radius: 8px 0 0 8px;
+    width: 250px !important;
+    font-family: "Poppins Regular", sans-serif;
 }
 
 .newsletter .ui.red.button {
-  height: 33px;
-  border-radius: 8px !important;
-  margin-left: -8px;
+    height: 33px;
+    border-radius: 8px !important;
+    margin-left: -8px;
 }
 
 .payment-methods {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
-.payment-methods > img {
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-  margin-right: 5px;
+.payment-methods>img {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    margin-right: 5px;
 }
 
-.payment-methods > img:hover {
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
+.payment-methods>img:hover {
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
 }
 
 .footer-logo {
-  margin-left: -30px;
+    margin-left: -30px;
 }
+
 .ui.modal.login-modal {
-  max-height: calc(100vh - 50px);
-  padding: 0;
-  background: transparent;
-  border-radius: 8xp !important;
-  overflow: hidden;
+    max-height: calc(100vh - 50px);
+    padding: 0;
+    background: transparent;
+    border-radius: 8xp !important;
+    overflow: hidden;
 }
 
 .loginbg {
-  max-height: calc(100vh - 50px);
-  margin-left: -2px;
+    max-height: calc(100vh - 50px);
+    margin-left: -2px;
 }
 
 .ui.modal.login-modal .content-wrapper {
-  display: flex;
+    display: flex;
 }
 
 .ui.modal.login-modal .modalform {
-  justify-self: stretch;
-  background: #fff url(../images/logo.png) bottom 30px left 55% no-repeat;
-  flex: 1 1 auto;
-  padding: 45px 90px 20px 45px;
+    justify-self: stretch;
+    background: #fff url(../images/logo.png) bottom 30px left 55% no-repeat;
+    flex: 1 1 auto;
+    padding: 45px 90px 20px 45px;
 }
 
 .ui.modal.login-modal .ui.tabular.menu {
-  justify-content: center;
-  -webkit-box-pack: justify;
-  min-height: auto;
-  border-bottom: 1px solid #414141 !important;
-  padding-bottom: 20px;
+    justify-content: center;
+    -webkit-box-pack: justify;
+    min-height: auto;
+    border-bottom: 1px solid #414141 !important;
+    padding-bottom: 20px;
 }
 
 .ui.modal.login-modal .ui.tabular.menu .item {
-  border: none;
-  font-family: "Poppins Medium", sans-serif;
-  color: #414141;
-  min-width: 80px;
-  font-size: 1em;
-  min-height: auto !important;
-  font-weight: normal !important;
-  height: 30px;
-  padding: 0;
+    border: none;
+    font-family: "Poppins Medium", sans-serif;
+    color: #414141;
+    min-width: 80px;
+    font-size: 1em;
+    min-height: auto !important;
+    font-weight: normal !important;
+    height: 30px;
+    padding: 0;
 }
 
 .ui.modal.login-modal .ui.tabular.menu:after {
-  display: none;
+    display: none;
 }
 
 .ui.modal.login-modal .ui.tabular.menu .active.item {
-  border: none;
-  color: #ff0404;
-  background: none;
+    border: none;
+    color: #ff0404;
+    background: none;
 }
 
 .ui.modal.login-modal .ui.segment {
-  border: none;
-  margin: 0 !important;
-  background: transparent;
+    border: none;
+    margin: 0 !important;
+    background: transparent;
 }
 
 .socialbtns {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 25px;
 }
 
 .socialbtns .ui.button {
-  font-size: 1rem;
-  font-weight: normal;
-  font-family: "Poppins Regular", sans-serif;
-  border-radius: 8px;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: "Poppins Regular", sans-serif;
+    border-radius: 8px;
 }
 
 .ui.modal.login-modal .ui.form input {
-  background: #e7e7e7;
-  height: 50px;
-  border: none;
-  border-radius: 8px;
-  font-family: "Poppins Regular", sans-serif;
-  font-size: 14px;
+    background: #e7e7e7;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    font-family: "Poppins Regular", sans-serif;
+    font-size: 14px;
 }
 
 .ui.form .remeberme {
-  color: rgba(110, 110, 110, 0.69) !important;
-  cursor: pointer;
+    color: rgba(110, 110, 110, 0.69) !important;
+    cursor: pointer;
 }
 
-.ui.modal.login-modal .ui.checkbox input:checked ~ .box:before,
-.ui.modal.login-modal .ui.checkbox input:checked ~ label:before,
-.ui.modal.login-modal .ui.checkbox input:checked:focus ~ label:before {
-  background: #55f312;
-  border-color: #55f312;
+.ui.modal.login-modal .ui.checkbox input:checked~.box:before,
+.ui.modal.login-modal .ui.checkbox input:checked~label:before,
+.ui.modal.login-modal .ui.checkbox input:checked:focus~label:before {
+    background: #55f312;
+    border-color: #55f312;
 }
 
-.ui.modal.login-modal .ui.checkbox input:checked ~ .box:after,
-.ui.modal.login-modal .ui.checkbox input:checked ~ label:after,
-.ui.modal.login-modal .ui.checkbox input:checked:focus ~ label:after {
-  color: #fff;
+.ui.modal.login-modal .ui.checkbox input:checked~.box:after,
+.ui.modal.login-modal .ui.checkbox input:checked~label:after,
+.ui.modal.login-modal .ui.checkbox input:checked:focus~label:after {
+    color: #fff;
 }
 
-.ui.checkbox input:checked ~ .box:before,
-.ui.checkbox input:checked ~ label:before,
-.ui.checkbox input:checked:focus ~ label:before {
-  background: #ff0404;
-  border-color: #ff0404;
+.ui.checkbox input:checked~.box:before,
+.ui.checkbox input:checked~label:before,
+.ui.checkbox input:checked:focus~label:before {
+    background: #ff0404;
+    border-color: #ff0404;
 }
 
-.ui.checkbox input:checked ~ .box:after,
-.ui.checkbox input:checked ~ label:after,
-.ui.checkbox input:checked:focus ~ label:after {
-  color: #fff;
+.ui.checkbox input:checked~.box:after,
+.ui.checkbox input:checked~label:after,
+.ui.checkbox input:checked:focus~label:after {
+    color: #fff;
 }
 
 a.redlink {
-  color: #ff0404;
+    color: #ff0404;
 }
 
 a.forgot-password {
-  float: right;
+    float: right;
 }
 
 .ui.modal.login-modal .ui.red.button {
-  height: 40px;
-  font-size: 16px;
-  margin: 15px 0 15px;
+    height: 40px;
+    font-size: 16px;
+    margin: 15px 0 15px;
 }
 
 .centered {
-  text-align: center;
+    text-align: center;
 }
 
 .password-field {
-  position: relative;
+    position: relative;
 }
 
-.password-field > img {
-  position: absolute;
-  right: 25px;
-  top: 20px;
-  cursor: pointer;
-  width: 21px;
+.password-field>img {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    cursor: pointer;
+    width: 21px;
 }
 
 .ui.modal.login-modal .ui.form .password-field input {
-  padding-left: 40px;
-  background-image: url(../images/lock.svg);
-  background-position: 15px 18px;
-  background-size: 11px;
-  background-repeat: no-repeat;
+    padding-left: 40px;
+    background-image: url(../images/lock.svg);
+    background-position: 15px 18px;
+    background-size: 11px;
+    background-repeat: no-repeat;
 }
 
 .ui.modal.login-modal .tos {
-  font-size: 13px;
+    font-size: 13px;
 }
